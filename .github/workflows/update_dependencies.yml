@@ -24,7 +24,6 @@ jobs:
                 uses: actions/checkout@v2
                 with:
                     ref: dashboard
-                    token: ${{ secrets.BALLERINA_BOT_TOKEN }}
 
             -   name: Get Dependencies and update files
                 run: |
