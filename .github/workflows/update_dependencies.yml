@@ -26,11 +26,6 @@ jobs:
                     ref: dashboard
                     token: ${{ secrets.BALLERINA_BOT_TOKEN }}
 
-            -   name: Configure Git User
-                run: |
-                    git config --global user.name ${{ secrets.BALLERINA_BOT_USERNAME }}
-                    git config --global user.email ${{ secrets.BALLERINA_BOT_EMAIL }}
-
             -   name: Get Dependencies and update files
                 run: |
                     cd dashboard
