@@ -18,6 +18,8 @@ jobs:
 
             -   name: Checkout Repo
                 uses: actions/checkout@v2
+                with:
+                    ref: dashboard-bal
 
             -   name: Configure Git User
                 run: |
